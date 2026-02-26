@@ -10,10 +10,11 @@ export class User {
  
  // Regra: Se não vier role, assume que é aluno
  this.role = safeData.role || 'student';
- 
+
  // Demais campos do Banco
  this.registration = safeData.registration || 'Sem Matrícula';
  this.turma = safeData.turma || '---';
+ this.schedule = safeData.schedule || null;
  
  // 3. Campo Computado (Frontend Only)
  // O banco NÃO tem avatar, mas o App precisa de um.

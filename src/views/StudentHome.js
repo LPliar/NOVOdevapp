@@ -89,11 +89,7 @@ STATUS: {currentTicket.getStatusText(marketStatus.isOpen)}
 <Text style={styles.ticketId}>ID: {currentTicket.id}</Text>
 </View>
 )}
-<TicketButton
-onPress={handleRequestTicket}
-isOpen={marketStatus.isOpen}
-hasTicket={hasTicket}
-/>
+
 <TouchableOpacity onPress={logout} style={styles.logoutButton}>
 <Text style={styles.logoutText}>Sair da conta</Text>
 </TouchableOpacity>
