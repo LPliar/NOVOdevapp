@@ -10,6 +10,8 @@ return { isOpen: false, message: 'Sem horário definido' };
 }
 // 3. MATEMÁTICA DO TEMPO
 const now = new Date();
+now.setHours(16)
+now.setMinutes(16)
 const currentTotalMinutes = now.getHours() * 60 + now.getMinutes();
 // Converter string "09:40" para números
 const [startH, startM] = user.schedule.start.split(':').map(Number);
